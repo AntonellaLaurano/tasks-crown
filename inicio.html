@@ -22,13 +22,13 @@
         <div class="container align-items-center options">
             <ul class="ul-options">
                 <li class="int-link">
-                    <a href="#presentacion" class="">Home</a>
+                    <a href="" class="">Home</a>
                 </li>
                 <li class="int-link">
-                    <a href="#about-us-container" class="">About Us</a>
+                    <a href="" class="">About Us</a>
                 </li>
                 <li class="int-link">
-                    <a href="#services" class="">Services</a>
+                    <a href="" class="">Services</a>
                 </li class="int-link">
             </ul>
         </div>
@@ -45,9 +45,9 @@
         <div class="collapse navbar-collapse " id="nav-content">
             <div class="links-container">
                 <ul class="nav navbar-nav">
-                    <li class="int-link"> <a href="#presentacion" class="">Home</a> </li>
-                    <li class="int-link"> <a href="#about-us-container" class="">About Us</a> </li>
-                    <li class="int-link"> <a href="#services" class="">Services</a> </li>
+                    <li class="int-link"> <a href="" class="">Home</a> </li>
+                    <li class="int-link"> <a href="" class="">About Us</a> </li>
+                    <li class="int-link"> <a href="" class="">Services</a> </li>
                 </ul>
             </div>
         </div>
@@ -82,46 +82,63 @@
                     <div class="sub-ordenar">
                         <a href="">Ordenar por:</a>
                         <div class="opciones">
-                            <select name="" id="">
-                                <option value="">Solicitud</option>
-                                <option value="">1</option> 
+                            <select class="custom-select mr-sm-2" name="" id="">
+                                <option value="" selected="true" disabled>Solicitud</option>
+                                <option value="">Profesional</option>
+                                <option value="">Comercial</option> 
                             </select>
-                            <select name="" id="">
-                                <option value="">Servicio</option>
+                            <select class="custom-select mr-sm-2" name="" id="">
+                                <option value="" selected="true" disabled>Servicio</option>
                                 <option value="">1</option>
                             </select> 
                         </div>
                     </div>
                 </div>
 
+                <div class="busqueda">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2 buscar" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-secundary my-2 my-sm-0 buscar-b" type="submit"><i class="fas fa-search text-grey" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+
                 <div class="mensaje">
                     <div class="ver">
                         <h6>Hora</h6>
                     </div>
-                    <div class="caja">
-                        <div class="sub-nombre">
-                            <i class="fas fa-user-circle circulo"></i>
-                            <Label>Nombre</Label>
+                    <div class="sub-mensaje">
+                        <div class="arrow">
+                            <i class="fas fa-redo"></i>
                         </div>
-                        <label>Información:</label>
-                        <div class="sub">
-                            <label>País:</label>
-                            <label>Región:</label>
-                        </div>
-                        <div class="sub">
-                            <label>Teléfono:</label>
-                            <label>Email:</label>
-                        </div>
-                    </div>
-                    <div class="caja-d"></div>
-                    <div class="ver">
-                        <a href="#ver-mas1" data-toggle="collapse">Ver más</a>
-                        <div id="ver-mas1" class="collapse informacion">
-                            <p>Lorem ipsum dolor sit amet, consectetur 
-                                adipisicing elit. Iure velit fugiat 
-                                itaque, aliquam voluptatibus eius labore 
-                                praesentium obcaecati, corrupti deserunt 
-                                repellat, quisquam perferendis ea.</p>
+                        
+                        <div class="pre-caja">
+                            
+                            <div class="caja">
+                                <div class="sub-nombre">
+                                    <i class="fas fa-user-circle circulo"></i>
+                                    <Label>Nombre</Label>
+                                </div>
+                                <label>Información:</label>
+                                <div class="sub">
+                                    <label>País:</label>
+                                    <label>Región:</label>
+                                </div>
+                                <div class="sub">
+                                    <label>Teléfono:</label>
+                                    <label>Email:</label>
+                                </div>
+                            </div>
+                            <div class="caja-d"></div>
+                            <div class="ver">
+                                <a href="#ver-mas1" data-toggle="collapse">Ver más</a>
+                                <div id="ver-mas1" class="collapse informacion">
+                                    <p>Lorem ipsum dolor sit amet, consectetur 
+                                        adipisicing elit. Iure velit fugiat 
+                                        itaque, aliquam voluptatibus eius labore 
+                                        praesentium obcaecati, corrupti deserunt 
+                                        repellat, quisquam perferendis ea.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -130,30 +147,37 @@
                     <div class="ver">
                         <h6>Hora</h6>
                     </div>
-                    <div class="caja">
-                        <div class="sub-nombre">
-                            <i class="fas fa-user-circle circulo"></i>
-                            <Label>Nombre</Label>
+                    <div class="sub-mensaje">
+                        <div class="arrow">
+                            <i class="fas fa-arrow-right"></i>
                         </div>
-                        <label>Solicito:</label>
-                        <div class="sub">
-                            <label>País:</label>
-                            <label>Región:</label>
-                        </div>
-                        <div class="sub">
-                            <label>Teléfono:</label>
-                            <label>Email:</label>
-                        </div>
-                    </div>
-                    <div class="caja-i"></div>
-                    <div class="ver">
-                        <a href="#ver-mas2" data-toggle="collapse">Ver más</a>
-                        <div id="ver-mas2" class="collapse informacion">
-                            <p>Lorem ipsum dolor sit amet, consectetur 
-                                adipisicing elit. Iure velit fugiat 
-                                itaque, aliquam voluptatibus eius labore 
-                                praesentium obcaecati, corrupti deserunt 
-                                repellat, quisquam perferendis ea.</p>
+                        <div class="pre-caja">
+                            <div class="caja">
+                                <div class="sub-nombre">
+                                    <i class="fas fa-user-circle circulo"></i>
+                                    <Label>Nombre</Label>
+                                </div>
+                                <label>Solicito:</label>
+                                <div class="sub">
+                                    <label>País:</label>
+                                    <label>Región:</label>
+                                </div>
+                                <div class="sub">
+                                    <label>Teléfono:</label>
+                                    <label>Email:</label>
+                                </div>
+                            </div>
+                            <div class="caja-i"></div>
+                            <div class="ver">
+                                <a href="#ver-mas2" data-toggle="collapse">Ver más</a>
+                                <div id="ver-mas2" class="collapse informacion">
+                                    <p>Lorem ipsum dolor sit amet, consectetur 
+                                        adipisicing elit. Iure velit fugiat 
+                                        itaque, aliquam voluptatibus eius labore 
+                                        praesentium obcaecati, corrupti deserunt 
+                                        repellat, quisquam perferendis ea.</p>
+                                </div>
+                            </div>  
                         </div>
                     </div>
                 </div>
@@ -162,30 +186,37 @@
                     <div class="ver">
                         <h6>Hora</h6>
                     </div>
-                    <div class="caja">
-                        <div class="sub-nombre">
-                            <i class="fas fa-user-circle circulo"></i>
-                            <Label>Nombre</Label>
+                    <div class="sub-mensaje">
+                        <div class="arrow">
+                            <i class="fas fa-redo"></i>
                         </div>
-                        <label>Información:</label>
-                        <div class="sub">
-                            <label>País:</label>
-                            <label>Región:</label>
-                        </div>
-                        <div class="sub">
-                            <label>Teléfono:</label>
-                            <label>Email:</label>
-                        </div>
-                    </div>
-                    <div class="caja-d"></div>
-                    <div class="ver">
-                        <a href="#ver-mas3" data-toggle="collapse">Ver más</a>
-                        <div id="ver-mas3" class="collapse informacion">
-                            <p>Lorem ipsum dolor sit amet, consectetur 
-                                adipisicing elit. Iure velit fugiat 
-                                itaque, aliquam voluptatibus eius labore 
-                                praesentium obcaecati, corrupti deserunt 
-                                repellat, quisquam perferendis ea.</p>
+                        <div class="pre-caja">
+                            <div class="caja">
+                                <div class="sub-nombre">
+                                    <i class="fas fa-user-circle circulo"></i>
+                                    <Label>Nombre</Label>
+                                </div>
+                                <label>Información:</label>
+                                <div class="sub">
+                                    <label>País:</label>
+                                    <label>Región:</label>
+                                </div>
+                                <div class="sub">
+                                    <label>Teléfono:</label>
+                                    <label>Email:</label>
+                                </div>
+                            </div>
+                            <div class="caja-d"></div>
+                            <div class="ver">
+                                <a href="#ver-mas1" data-toggle="collapse">Ver más</a>
+                                <div id="ver-mas1" class="collapse informacion">
+                                    <p>Lorem ipsum dolor sit amet, consectetur 
+                                        adipisicing elit. Iure velit fugiat 
+                                        itaque, aliquam voluptatibus eius labore 
+                                        praesentium obcaecati, corrupti deserunt 
+                                        repellat, quisquam perferendis ea.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -194,7 +225,6 @@
     </div>
 
 
-    <script src="inicio.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js " integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js " integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb " crossorigin="anonymous "></script>
     <script src="js/bootstrap.min.js "></script>
