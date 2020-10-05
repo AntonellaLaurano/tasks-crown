@@ -18,10 +18,8 @@
 }
 
 .grid-1 {
-    flex-direction: row;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     color: black;
     min-height: 10vh;
     background-color: rgb(198, 108, 74);
@@ -59,11 +57,7 @@
     align-items: center;
     color: black;
     min-height: 90vh;
-    background-image: url("human.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: rgb(198, 108, 74);
 }
 
 .Colum-principal {
@@ -71,7 +65,7 @@
     flex-direction: column;
     align-items: center;
     width: 65%;
-    min-height: 90vh;
+    min-height: 64.5vh;
     background-color: white;
     height: 20px;
     overflow-y: scroll;
@@ -232,19 +226,9 @@ nav {
     margin: 0;
 }
 
-.icono-globo {
+.icono-perfil {
     font-size: 40px;
-    margin: 0 30px;
-}
-
-.title {
-    margin: 40px 0 20px 0;;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    background-color: rgb(4, 4, 73);
-    color: white;
+    margin: 0 30px 0  20px;
 }
 
 #sidebar {
@@ -306,6 +290,43 @@ int-link a:active,
     color: white !important;
 }
 
+.buscar-b:hover {
+    background-color: rgb(3, 3, 46);
+    border-color: rgb(3, 3, 46);
+    color: white;
+}
+
+.fondo {
+    background-image: url("cup-of-coffee.jpg");
+    background-size: cover;
+    background-position-y: 20%;
+    color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-inicio {
+    border: rgb(145, 60, 51);
+    background-color: rgb(145, 60, 51);
+    margin: 10px 10px 0 10px;
+    height: 40px;
+    width: 100px;
+    font-size: large;
+}
+
+.saludo {
+    align-self: center;
+}
+
+.btn-office {
+    border: rgb(145, 60, 51);
+    background-color: rgb(145, 60, 51);
+    margin: 10px 10px 20px 10px;
+    font-size: x-large;
+}
+
 .check {
     width: 70%;
     display: flex;
@@ -348,15 +369,9 @@ form {
     width: 48%;
 }
 
-.upload-button{
-    text-align: center;
-    width: 30%;
-    font-style: italic;
-}
-
-.upload-button:hover{
-    color: rgb(3, 3, 46);
-    text-shadow: 4px rgba(3, 3, 46, 0.6);
+.confirmacion {
+    display: flex;
+    justify-content: center;
 }
 
 .botones {
@@ -374,8 +389,19 @@ form {
     margin-bottom: 40px;
 }
 
-#contenido-comercial {
+#contenido-solicitud {
     display: none;
+}
+
+.upload-button{
+    text-align: center;
+    width: 30%;
+    font-style: italic;
+}
+
+.upload-button:hover{
+    color: rgb(3, 3, 46);
+    text-shadow: 4px rgba(3, 3, 46, 0.6);
 }
 
 @media(min-width: 768px) {
@@ -405,9 +431,45 @@ form {
     }
 }
 
+@media(max-width: 468px) {
+    #Buscar {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1210px) {
+    .options {
+        padding: 0;
+    }
+
+    .h5 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .int-link a {
+        margin-left: 0.1rem;
+        padding: 0.3rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .int-link a {
+        font-size: 1.1rem;
+    }
+}
+
 @media(max-width: 660px) {
     .check {
         flex-direction: column;
         text-align: center;
+    }
+    .display-3 {
+        font-size: 50px;
     }
 }
