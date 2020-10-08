@@ -16,7 +16,7 @@ function f_employed() {
 }
 
 function funTasks() {
-    document.location.href = "#New-content";
+    document.location.href = "BusinessP.html" + "#New-content";
 }
 
 function f_statis() {

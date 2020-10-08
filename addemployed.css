@@ -229,6 +229,11 @@
         background-color: rgb(32, 39, 57);
         color: white;
     }
+
+    .cerrar {
+        background-color: white;
+        color: black;
+    }
     
     @media(min-width: 900px) {
         .subgrid2 {

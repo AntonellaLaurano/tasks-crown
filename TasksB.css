@@ -277,6 +277,11 @@ nav {
     color: white;
 }
 
+.cerrar {
+    background-color: white;
+    color: black;
+}
+
 @media(min-width: 768px) {
     #sidebar {
         padding: 2rem 1rem;

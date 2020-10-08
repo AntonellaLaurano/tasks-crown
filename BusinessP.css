@@ -467,6 +467,11 @@ h6 {
     width: 50%;
 }
 
+.cerrar {
+    background-color: white;
+    color: black;
+}
+
 @media(min-width: 768px) {
     #sidebar {
         padding: 2rem 1rem;
