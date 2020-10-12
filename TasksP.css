@@ -4,7 +4,7 @@
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    height: 60vh;
 }
 
 .notification {
@@ -31,7 +31,7 @@
     flex-direction: column;
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 300px;
 }
 
 .content-grid {
@@ -45,6 +45,17 @@
 .rows {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.rows h5 {
+    margin: 0;
+    color: white;
+}
+
+.logo-task {
+    width: 120px;
 }
 
 #links {
@@ -256,9 +267,6 @@ nav {
         width: 84%;
         min-height: 100vh;
     }
-    .subgrid2 {
-        width: 30%;
-    }
     .content-grid {
         width: 70%;
     }
@@ -324,4 +332,8 @@ nav {
     }
 }
 
-@media(min-width: 415px) {}
+@media (max-width: 361px) {
+    .rows h5 {
+        font-size: 16px;
+    }
+}

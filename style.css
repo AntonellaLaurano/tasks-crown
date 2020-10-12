@@ -292,7 +292,8 @@ ul {
 }
 
 .navbar-header {
-    position: relative;
+    display: flex;
+    flex-direction: row;
     padding: 0.5rem;
 }
 
@@ -539,18 +540,14 @@ body {
     align-items: flex-end;
 }
 
-.boton-inicio {
-    width: 100px;
-    background-color: rgb(3, 3, 46);
-    border-color:  rgb(3, 3, 46);
-    margin: 10px 0 20px 0;
-}
-
 .boton {
     margin: 20px 0;
-    width: 300px;
+    width: 250px;
     background-color:  rgb(3, 3, 46);
     border-color:  rgb(3, 3, 46);
+    white-space: normal;
+    padding: 10px 5px;
+    font-size: 17px;
 }
 
 .cuadro-azul {
@@ -668,4 +665,19 @@ body {
 .int-link a:hover {
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.63);
     color: white !important;
+}
+
+.logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-task {
+    width: 100%;
+}
+
+.logo-task2 {
+    width: 120px;
 }

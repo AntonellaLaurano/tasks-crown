@@ -282,6 +282,10 @@ nav {
     color: black;
 }
 
+.text {
+    margin-top: 40px;
+}
+
 @media(min-width: 768px) {
     #sidebar {
         padding: 2rem 1rem;

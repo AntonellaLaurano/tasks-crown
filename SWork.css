@@ -42,9 +42,20 @@
 
 #data {
     justify-content: space-around;
-    min-width: 80%;
+    width: 300px;
     height: 5%;
     display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#data h5 {
+    margin: 0;
+    color: white;
+}
+
+.logo-task {
+    width: 120px;
 }
 
 .row1-content {
@@ -69,9 +80,9 @@
 }
 
 .buton1 {
-    background-color: rgb(4, 4, 73);
+    background-color: rgb(198, 108, 74);
     color: white;
-    border: rgb(8, 33, 110);
+    border: rgb(198, 108, 74);
     width: 50%;
 }
 
@@ -255,6 +266,10 @@ nav {
     text-align: end;
 }
 
+.text {
+    margin-top: 40px;
+}
+
 @media(min-width: 768px) {
     #sidebar {
         padding: 2rem 1rem;
@@ -273,9 +288,6 @@ nav {
         margin-left: 16%;
         width: 84%;
         min-height: 100vh;
-    }
-    #data {
-        min-width: 30%;
     }
     .colum1,
     .colum2,
@@ -332,9 +344,9 @@ nav {
         flex-direction: row;
     }
     .buton1 {
-        background-color: rgb(4, 4, 73);
+        background-color: rgb(198, 108, 74);
         color: white;
-        border: rgb(8, 33, 110);
+        border: rgb(198, 108, 74);
         width: 75%;
     }
     .colum1,
@@ -347,5 +359,11 @@ nav {
 @media (max-width: 640px) {
     .seccion-contenido {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 361px) {
+    .rows h5 {
+        font-size: 16px;
     }
 }

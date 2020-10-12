@@ -90,6 +90,21 @@ h2 {
     color: #111;
 }
 
+.logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-task {
+    width: 100%;
+}
+
+.logo-task2 {
+    width: 120px;
+}
+
 @media (min-width: 768px) {
     #form-body {
         flex-direction: row;

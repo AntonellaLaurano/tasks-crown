@@ -453,6 +453,21 @@ int-link a:active,
     color: white;
 }
 
+.logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-task {
+    width: 100%;
+}
+
+.logo-task2 {
+    width: 120px;
+}
+
 @media(min-width: 768px) {
     #sidebar {
         padding: 2rem 1rem;

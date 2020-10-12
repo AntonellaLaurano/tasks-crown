@@ -280,3 +280,18 @@ nav {
     font-size: 2.4rem;
     color: white;
 }
+
+.logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-task {
+    width: 100%;
+}
+
+.logo-task2 {
+    width: 120px;
+}
