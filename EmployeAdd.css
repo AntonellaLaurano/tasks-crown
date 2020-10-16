@@ -10,6 +10,8 @@
 .notification {
     margin-top: -18px;
     height: 8%;
+    margin-right: 20px;
+    text-align: end;
 }
 
 #main-content {
@@ -31,7 +33,7 @@
     flex-direction: column;
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 200px;
 }
 
 .content-grid {
@@ -44,14 +46,8 @@
 
 .rows {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content:center;
     margin-right: 10px;
-}
-
-.rows h5 {
-    margin: 0;
-    color: white;
 }
 
 .logo-task {
@@ -223,6 +219,79 @@ nav {
     color: white;
 }
 
+#boton-notificacion2 {
+    z-index: 20;
+}
+
+#notificar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 21;
+    height: 60vh;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    padding: 10px 0;
+    margin-top: 83px;
+    transition: margin-left 1s;
+}
+
+.desactivar {
+    margin-left: -60%;
+}
+
+.activar {
+    margin-left: 0;
+}
+
+.notificacion {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: solid rgba(184, 69, 31, 0.3);
+    border-bottom: solid rgba(184, 69, 31, 0.3);
+}
+
+#notificar h6 {
+    text-align: end;
+    margin-bottom: 5px;
+    margin-right: 8px;
+}
+
+.notificacion h5 {
+    background-color: rgb(198, 108, 74);
+    color: white;
+    padding: 4px;
+    text-align: center;
+    width: 100%;
+}
+
+.notificacion p {
+    margin-left: 20px
+}
+
+.notificacion h6 {
+    text-align: start !important;
+}
+
+.btn-notificar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.boton-notificar {
+    background-color: rgb(3, 3, 46);
+    color: white;
+    height: 30px;
+    padding: 5px 2px;
+    width: 100px;
+    font-size: 15px;
+}
+
+
 @media(min-width: 768px) {
     #sidebar {
         padding: 2rem 1rem;
@@ -233,6 +302,7 @@ nav {
         color: white;
         width: 16%;
         height: 100vh;
+        z-index: 22;
     }
     nav {
         display: none !important;
@@ -250,6 +320,42 @@ nav {
     }
     #Send-solicitud {
         width: 30%;
+    }
+
+    #notificar {
+        min-height: 95vh;
+        width: 16%;
+        position: fixed;
+        z-index: 21;
+        margin-top: 79px;
+        background-color: rgba(255, 255, 255, 0.7);
+        color: black;
+        padding: 20px 0;
+        transition: margin-left 1s;
+    }
+
+    .desactivar {
+        margin-left: 0;
+    }
+
+    .activar {
+        margin-left: 16%;
+    }
+
+    .boton-notificacion {
+        color: white;
+    }
+
+    .boton-notificacion:hover {
+        color: rgb(238, 234, 234);
+        border-color: transparent;
+    }
+
+    .notificacion {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-top: solid rgba(184, 69, 31, 0.3);
+        border-bottom: solid rgba(184, 69, 31, 0.3);
+        min-height: 50px;
     }
 }
 

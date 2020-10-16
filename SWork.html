@@ -18,7 +18,7 @@
 
     <div id="sidebar">
         <div class="notification">
-            <i class="fas fa-bell fa-2x"></i>
+            <a id="boton-notificacion" role="button"><i title="notifications" class="fas fa-bell fa-2x"></i></a>
         </div>
         <div class="contenedor-sidebar">
             <div class="Photo">
@@ -46,10 +46,33 @@
         </div>
     </div>
 
+    <div class="notificaciones desactivar" id="notificar">
+        <h6>15/octubre/2020</h6>
+        <div class="notificacion">
+            <h5>Empresa of design - local</h5>
+            <p>¡Ha enviado una solicitud de trabajo!</p>
+            <div class="btn-notificar">
+                <button class="btn btn-secundary boton-notificar">Ver empresa</button>
+            </div>
+        </div>
+        <h6>15/octubre/2020</h6>
+        <div class="notificacion">
+            <h5>Empresa DT alimentos</h5>
+            <p>¡Ha aceptado su solicitud de trabajo!</p>
+        </div>
+        <h6>15/octubre/2020</h6>
+        <div class="notificacion">
+            <h5>Task / work pending</h5>
+            <p>Tines una nueva tarea / work</p>
+            <div class="btn-notificar">
+                <button class="btn btn-secundary boton-notificar">Ver</button>
+            </div>
+        </div>
+    </div> 
 
     <nav class="navbar sticky-top">
         <div class="navbar-header">
-            <i class="fas fa-bell fa-2x"></i>
+            <a id="boton-notificacion2" role="button"><i title="notifications" class="fas fa-bell fa-2x"></i></a>
             <h1 class="h1-logo"> Imagen </h1>
             <button class="navbar-toggle collapsed btn btn-secondary" data-toggle="collapse" data-target="#nav-content">
                 <i class="fas fa-align-justify fa-2x"></i>
@@ -86,7 +109,6 @@
     <div class="main-content">
         <div id="principal">
             <div id="data">
-                <h5>TASKS CROWN</h5>
                 <img src="TASK_Mesa.png" alt="" class="logo-task">
             </div>
         </div>
@@ -175,6 +197,7 @@
 
     </div>
 
+    <script src="notificaciones.js"></script>
     <script src="codeP.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
